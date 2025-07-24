@@ -17,7 +17,7 @@
   </tr>
   <tr> 
     <td align="center">  Java  </td>
-    <td align="center">  C++  </td>
+    <td align="center">  C++, Java  </td>
     <td align="center">  Java  </td>
   </tr> 
 </table>
