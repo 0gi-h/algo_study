@@ -1,57 +1,66 @@
-// 여기에 코드 작성
 import java.io.*;
 import java.util.*;
 public class Main{
-    public static int[] dR = {1, 0 , -1, 0};
-    public static int[] dC = {0, 1 , 0, -1};
-    public static int[][] map;
-    public static boolean[][] visited;
-    public static int r;
-    public static int c;
+    static int[][] map;
+    static boolean[][] visited;
+    static int n;
+    static int[] dCol = {1, 0, -1, 0};
+    static int[] dRow = {0, 1, 0, -1};
     public static void main(String[] args) throws IOException{
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        r = Integer.parseInt(st.nextToken());
-        c=  Integer.parseInt(st.nextToken());
-
-        map = new int[r][c];
-        visited = new boolean[r][c];
-
-        for(int i = 0; i < r; i++){
-            String s= br.readLine();
-            for(int j = 0; j < c; j++){
-                map[i][j] = s.charAt(j) - '0';
+        BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+        n = Integer.parseInt(br.readLine());
+        map = new int[n][n];
+        visited = new boolean[n][n];
+        StringTokenizer st;
+        int maxNum = 0;
+        for(int i = 0; i < n; i++){
+            st = new StringTokenizer(br.readLine());
+            for(int j = 0; j < n; j++){
+                map[i][j] = Integer.parseInt(st.nextToken());
+                maxNum = Math.max(map[i][j] , maxNum);
             }
         }
-        System.out.print(bfs());
+        int max = 0;
+        for(int water = 0; water <= maxNum ; water++){
+            visited = new boolean[n][n];
+            int count = 0;
+            for(int i = 0; i < n; i++){
+                for(int j = 0; j < n; j++){
+                    if(map[i][j] <= water){ 
+                        visited[i][j] = true;
+                        continue;
+                    }
+                    else if(visited[i][j] == true) continue;
+                    bfs(i, j, water);
+                    count++;
+                }
+            }
+            max = Math.max(max, count);
+        }
+        System.out.print(max);
     }
-    public static int bfs(){
+
+    public static void bfs(int col, int row, int water){
         Queue<int[]> queue = new LinkedList<>();
-        queue.offer(new int[]{0, 0, 1});
-        visited[0][0] = true;
+        queue.offer(new int[]{col,row});
+        visited[col][row] = true;
         while(queue.size() > 0){
             int[] now = queue.poll();
-            int nR = now[0];
-            int nC = now[1];
-            int count = now[2];
-
-            if(nR == r-1 && nC == c-1) return count;
-
-            for(int i = 0; i < 4; i++){
-                int nnR = nR + dR[i];
-                int nnC = nC + dC[i];
-                if(check(nnR, nnC)) continue;
-                if(map[nnR][nnC] == 0) continue;
-                if(visited[nnR][nnC]) continue;
-                visited[nnR][nnC] = true;
-                queue.offer(new int[]{nnR, nnC, count+1});
+            int nCol = now[0];
+            int nRow = now[1];
+            for(int i =0; i < 4; i++){
+                int nnCol = nCol + dCol[i];
+                int nnRow = nRow +dRow[i];
+                if(nnCol < 0 || nnRow < 0 || nnCol == n || nnRow == n) continue;
+                if(map[nnCol][nnRow] <= water){
+                    visited[nnCol][nnRow] = true;
+                    continue;
+                }
+                if(map[nnCol][nnRow] > water && !visited[nnCol][nnRow]){
+                    visited[nnCol][nnRow] = true;
+                    queue.offer(new int[]{nnCol, nnRow});
+                }
             }
-
         }
-        return -1;
-    }
-    public static boolean check(int col, int row){
-        if(col >= 0 && col < r && row >= 0 && row < c) return false;
-        return true;
     }
 }
