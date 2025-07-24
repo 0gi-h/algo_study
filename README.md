@@ -7,12 +7,12 @@
 <table>
  <tr>
     <td align="center"><a href="https://github.com/0gi-h"><img src="https://avatars.githubusercontent.com/0gi-h" width="150px;" alt=""></td>
-    <td align="center"><a href="https://github.com/"><img src="https://avatars.githubusercontent.com/" width="150px;" alt=""></td>
+    <td align="center"><a href="https://github.com/"><img src="https://avatars.githubusercontent.com/991357" width="150px;" alt=""></td>
     <td align="center"><a href="https://github.com/Rentyo"><img src="https://avatars.githubusercontent.com/Rentyo" width="150px;" alt=""></td>
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/0gi-h"><b>황기영</b></td>
-    <td align="center"><a href="https://github.com/"><b>이현빈</b></td>
+    <td align="center"><a href="https://github.com/991357"><b>이현빈</b></td>
     <td align="center"><a href="https://github.com/Rentyo"><b>임태호</b></td>
   </tr>
   <tr> 
