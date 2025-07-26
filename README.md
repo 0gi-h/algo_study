@@ -7,17 +7,17 @@
 <table>
  <tr>
     <td align="center"><a href="https://github.com/0gi-h"><img src="https://avatars.githubusercontent.com/0gi-h" width="150px;" alt=""></td>
-    <td align="center"><a href="https://github.com/"><img src="https://avatars.githubusercontent.com/" width="150px;" alt=""></td>
+    <td align="center"><a href="https://github.com/"><img src="https://avatars.githubusercontent.com/991357" width="150px;" alt=""></td>
     <td align="center"><a href="https://github.com/Rentyo"><img src="https://avatars.githubusercontent.com/Rentyo" width="150px;" alt=""></td>
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/0gi-h"><b>황기영</b></td>
-    <td align="center"><a href="https://github.com/"><b>이현빈</b></td>
+    <td align="center"><a href="https://github.com/991357"><b>이현빈</b></td>
     <td align="center"><a href="https://github.com/Rentyo"><b>임태호</b></td>
   </tr>
   <tr> 
     <td align="center">  Java  </td>
-    <td align="center">  C++  </td>
+    <td align="center">  C++, Java  </td>
     <td align="center">  Java  </td>
   </tr> 
 </table>
@@ -31,6 +31,8 @@
 | 주차  | 날짜     | 알고리즘                | 문제명                                                                                                                                          | 
 | ----- | -------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | 
 | Week1 | 25.07.24 | DFS, BFS               | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>[괄호 추가하기](https://www.acmicpc.net/problem/16637)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/>[미로 탐색](https://www.acmicpc.net/problem/2178)<br />  <img height="20px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/>[안전 영역](https://www.acmicpc.net/problem/2468)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/8.svg"/>[바이러스](https://www.acmicpc.net/problem/2606)<br />| 
+| Week2 | 25.07.31 | 구현               | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/11.svg"/>[파이프 옮기기1](https://www.acmicpc.net/problem/17070)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/>[봄버](https://www.acmicpc.net/problem/16918)<br />  <img height="20px" width="25px" src="https://static.solved.ac/tier_small/10.svg"/>[신입 사원](https://www.acmicpc.net/problem/1946)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/8.svg"/>[자리배정](https://www.acmicpc.net/problem/10157)<br />| 
+
 
 <br />
 
@@ -70,8 +72,8 @@
 ## ✅ 파일명 규칙
 
 ```
--   소스코드 파일 명: [문제 플랫폼] 문제이름_번호(Optional)_알고리즘
-    Ex. [BOJ] 미로탐색_2178_BFS,DFS.java
+-   소스코드 파일 명: [문제 플랫폼] 문제이름_번호(Optional)_난이도
+    Ex. [BOJ] 미로탐색_2178_실버1.java
 ```
 
 <br />
