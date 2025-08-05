@@ -41,7 +41,7 @@ public class Main {
 				}
 			}
 			
-			if(S != 1 && B != 0) {
+			if(S != 0 && B != 0) {
 				result = Math.abs(S-B) < result ? Math.abs(S-B) : result;
 			}
 			
