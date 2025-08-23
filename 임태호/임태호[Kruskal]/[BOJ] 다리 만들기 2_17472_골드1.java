@@ -2,8 +2,10 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
+    //4방향 벡터
     static final int[][] d = {{1,0},{0,1},{-1,0},{0,-1}};
     static ArrayList<ArrayList<int[]>> islands;
+    // 크루스칼 알고리즘 용 루트 1차원 배열
     static int[] root;
     static int n;
     static int m;
@@ -27,6 +29,7 @@ public class Main {
             }
         }
 
+        //Flood Fill을 통해 섬 정보 저장
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
                 if(v[i][j]) continue;
@@ -56,6 +59,7 @@ public class Main {
         for(int i = 0; i < islands.size(); i++){
             root[i] = i;
         }
+        // 다리의 길이를 오름차순으로 다리 길이가 가장 짧은 순부터 크루스칼 알고리즘 적용
         PriorityQueue<int[]> pq = new PriorityQueue<>(new  Comparator<int[]>(){
             public int compare(int[] o1, int[] o2){
                 return o1[2] -  o2[2];
@@ -121,6 +125,7 @@ public class Main {
         for(int i = 0; i < islands.size(); i++){
             root[i] = find(i);
         }
+        // 전부 연결되어 있는 지 확인(root가 전부 같은 지 확인)
         boolean allConnected = true;
         int now = root[0];
         for(int i = 1; i < islands.size(); i++){
@@ -131,6 +136,7 @@ public class Main {
         }
         System.out.println(sum == 0 || !allConnected ? -1 : sum);
     }
+    
     public static void union(int i , int j){
         int rootI =  find(i);
         int rootJ = find(j);
