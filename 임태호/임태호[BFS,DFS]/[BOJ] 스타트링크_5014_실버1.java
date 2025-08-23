@@ -24,8 +24,12 @@ public class Main {
                 result = now[1];
                 break;
             }
+            // 위층
             int nU = now[0] + u;
+            // 아래 층
             int nD = now[0] - d;
+
+            // 위층 아래 층 연산은 따로 둬야 한다.
             if( !(nU > f || v[nU]) ){
                 deque.offer(new int[]{nU, now[1]+1});
                 v[nU] = true;
