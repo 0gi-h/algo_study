@@ -36,7 +36,6 @@ public class Main
         while (!bfsQ.isEmpty())
         {
             int cur = bfsQ.poll();
-            S = cur;
 
             if (cur == G)
                 return;
