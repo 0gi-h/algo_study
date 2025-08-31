@@ -34,12 +34,14 @@ public class Main {
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
                 if(!v[i][j]){
+                    // 한번도 방문을 안했다면 새로운 영역 
                     areas++;
                     int points = 0;
                     q.offer(new int[]{i, j});
                     v[i][j] = true;
                     while(!q.isEmpty()){
                         int[] now =  q.poll();
+                        // 영역의 크기(영역의 개수)
                         points++;
                         for(int[] k : d){
                             int nRow = now[0] + k[0];
@@ -53,6 +55,7 @@ public class Main {
                 }
             }
         }
+        // 영역의 넓이 오름 차순
         Collections.sort(arr);
         sb.append(areas).append("\n");
         for(int i = 0; i < arr.size(); i++){

@@ -27,6 +27,7 @@ public class Main {
                 if(map[i][j] == 9){
                     sharkRow = i;
                     sharkCol = j;
+                    //중요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 이거 안하면 로직 꼬임
                     map[i][j] = 0;
                 }else if(map[i][j] != 0){
                     fishCount++;
@@ -36,6 +37,7 @@ public class Main {
         simulate();
     }
     public static void simulate(){
+        // int[0] : row , int[1] : col , int[2] : distance
         PriorityQueue<int[]> q = new PriorityQueue<>(new Comparator<int[]>() {
             @Override
             public int compare(int[] o1, int[] o2) {
@@ -48,6 +50,7 @@ public class Main {
         int time = 0;
         int eatCount = 0;
         boolean[][] v;
+        // 먹이가 남아 있는 경우
         while(fishCount > 0){
             boolean eat = false;
             if(q.size() > 0){
@@ -58,6 +61,7 @@ public class Main {
             v[sharkRow][sharkCol] = true;
             while(!q.isEmpty()){
                 int[] cur =  q.poll();
+                // 먹을 수 있는 경우
                 if(map[cur[0]][cur[1]] != 0 && map[cur[0]][cur[1]] < size){
                     eat = true;
                     map[cur[0]][cur[1]] = 0;
@@ -80,6 +84,7 @@ public class Main {
                     q.offer(new int[]{row, col, cur[2] + 1});
                 }
             }
+            // 남은 먹이를 먹을 수 없는 경우
             if(!eat) break;
         }
         System.out.print(time);
