@@ -18,6 +18,7 @@ public class Solider {
             if(arr[i] < dp.get(dp.size()-1)){
                 dp.add(arr[i]);
             }else if(arr[i] > dp.get(dp.size()-1)){
+                // 배열의 값 중 처음으로 작아지는 값의 위치입니다.
                 int index = binarySearch(arr[i]);
                 dp.remove(index);
                 dp.add(index, arr[i]);
