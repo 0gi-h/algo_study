@@ -14,6 +14,7 @@ public class Main {
         for(int i = 0; i < n; i++){
             coins[i] = Integer.parseInt(br.readLine());
         }
+        // 백트래킹을 위해 정렬을 했습니다.
         Arrays.sort(coins);
         for(int i = 1; i <= k; i++){
             for(int j = 0; j < n; j++){
