@@ -8,6 +8,7 @@ public class Main {
         result[0][0] = 1;
         result[0][1] = 1;
         result[0][2] = 1;
+        // mod 연산 법칙 (a + b) % c = (a % c + b % c) % c
         for(int i = 1; i < n; i++){
             result[i][0] = (result[i-1][0] % 9901 + result[i-1][1] % 9901 + result[i-1][2] % 9901) % 9901;
             result[i][1] = (result[i-1][0] % 9901 + result[i-1][2] % 9901) % 9901;
