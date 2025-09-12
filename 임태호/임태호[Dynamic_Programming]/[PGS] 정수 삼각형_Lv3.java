@@ -16,6 +16,7 @@ class Solution {
             }
         }
         dp[triangle.length-1] = new int[triangle.length];
+        //max 연산에 반복문을 생성하는 것을 방지하기 위해 마지막 위치만 따로 반복문으로 dp 연산 했습니다.
         for(int j = 0; j < triangle.length; j++){
             if(j <= triangle.length-2) dp[triangle.length-1][j] = dp[triangle.length-2][j];
             if(j - 1 >= 0) dp[triangle.length-1][j] = Math.max(dp[triangle.length-1][j] , dp[triangle.length-2][j-1]);
