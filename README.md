@@ -47,6 +47,7 @@
 | Week14 | 25.10.23 | 랜덤 디펜스           | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>[벽 타기](https://www.acmicpc.net/problem/23563)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>[나무 재테크](https://www.acmicpc.net/problem/16235)<br />  <img height="20px" width="25px" src="https://static.solved.ac/tier_small/11.svg"/>[레드 스톤](https://www.acmicpc.net/problem/28291)<br /> | 
 | Week15 | 25.10.30 | 랜덤 디펜스           | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/15.svg"/>[크롬](https://www.acmicpc.net/problem/20667)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>[뮤탈리스크](https://www.acmicpc.net/problem/12869)
 | Week16 | 25.11.06 | 랜덤 디펜스           | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/14.svg"/>[로봇 조종하기](https://www.acmicpc.net/problem/2169)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>[물통](https://www.acmicpc.net/problem/2251)
+| Week17 | 25.11.13 | 랜덤 디펜스           | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>[부분합](https://www.acmicpc.net/problem/1806)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>[단어 수학](https://www.acmicpc.net/problem/1339)
 
 <br />
 
