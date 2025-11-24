@@ -49,6 +49,7 @@
 | Week16 | 25.11.06 | 랜덤 디펜스           | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/14.svg"/>[로봇 조종하기](https://www.acmicpc.net/problem/2169)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>[물통](https://www.acmicpc.net/problem/2251)
 | Week17 | 25.11.13 | 랜덤 디펜스           | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>[부분합](https://www.acmicpc.net/problem/1806)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/12.svg"/>[단어 수학](https://www.acmicpc.net/problem/1339)
 | Week18 | 25.11.20 | 랜덤 디펜스           | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/11.svg"/>[모독](https://www.acmicpc.net/problem/16678)<br /> <img height="20px" width="25px" src="https://static.solved.ac/tier_small/11.svg"/>[센서](https://www.acmicpc.net/problem/2212)
+| Week19 | 25.11.27 | 랜덤 디펜스           | <img height="20px" width="25px" src="https://static.solved.ac/tier_small/13.svg"/>[마라톤 2](https://www.acmicpc.net/problem/10653)
 
 
 <br />
